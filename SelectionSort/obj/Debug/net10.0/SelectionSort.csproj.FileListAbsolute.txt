@@ -12,3 +12,4 @@
 /home/ibrahim/Belgeler/VsCode/23th Course Examples/Selection Sort/SelectionSort/obj/Debug/net10.0/SelectionSort.pdb
 /home/ibrahim/Belgeler/VsCode/23th Course Examples/Selection Sort/SelectionSort/obj/Debug/net10.0/SelectionSort.genruntimeconfig.cache
 /home/ibrahim/Belgeler/VsCode/23th Course Examples/Selection Sort/SelectionSort/obj/Debug/net10.0/ref/SelectionSort.dll
+/home/ibrahim/Belgeler/VsCode/23th Course Examples/Selection Sort/SelectionSort/obj/Debug/net10.0/SelectionSort.sourcelink.json
