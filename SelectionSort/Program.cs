@@ -5,27 +5,6 @@ namespace SelectionSort
 {
     class Program
     {
-        public static int GetMinElementOfArray(int[] array)
-        {
-            if (array.Length == 0)
-            {
-                return 0;
-            }
-            int minElement = array[0];
-
-
-            for (int i = 0; i < array.Length; i++)
-            {
-
-                if (array[i] < minElement)
-                {
-                    minElement = array[i];
-                }
-
-            }
-
-            return minElement;
-        }
 
 
         public static void ComputeSelectionSort(int[] array)
@@ -36,7 +15,7 @@ namespace SelectionSort
             for (int i = 0; i < array.Length; i++)
             {
                 
-                //in this loop, we find the min element of array.
+                //in this loop, we find the min element of array. Her bir aşama için yani her bir subarray için min value bulmalıyız
                 minElement=array[i];
                 for (int k = i; k < array.Length; k++)
                 {
@@ -46,8 +25,9 @@ namespace SelectionSort
                       
                     }
                     
-                }
+                }   
                indexOfMinElement=array.IndexOf(minElement);
+               //eğer min eleman zaten en sonda ise swaplık bir durum yok
                 if(indexOfMinElement==i)
                 {
                     break;
@@ -60,11 +40,12 @@ namespace SelectionSort
 
 
         public static void Main()
-        {Console.Clear();
+        {Console.Clear(); //alt T enter //Not al
 
 
             int[] array = { 6,5,4,9,2,1};
 
+            //algoritma tamam gibi sadece extreme durumlar için test edilebilir
             ComputeSelectionSort(array);
             
             foreach (var item in array)
